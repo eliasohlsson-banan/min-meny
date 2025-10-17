@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    padding: 0;
+    animation: snurr-utan-snurr 10s infinite;
+}
+
+body div header ul {
+    position: absolute;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    overflow: hidden;
+    left: 25%;
+    bottom: 50%;
+    background-color: #FF0000;
+    animation: snurr 5s infinite;
+}
+
+ul {
+    position: absolute;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    overflow: hidden;
+    left: 25%;
+    bottom: 50%;
+    background-color: #FF0000;
+
+}
+
+li {
+    float: left;
+
+}
+
+li a {
+    display: block;
+    text-decoration: underline; 
+    padding: 14px 16px;
+    text-align: center;
+    color: white;
+
+}
+
+p {
+    animation: snurr-utan-color 100s infinite;
+}
+
+.tillbaks {
+    width: 150px;
+    height: 20px;
+    color: black;
+    background-color: rgb(224, 224, 224);
+}
+.tillbaks a:visited {
+    color: black;
+}
+
+@keyframes snurr-utan-snurr {
+    15% {
+        background-color: #FFA500;
+    }
+    30% {
+        background-color: #FFFF00;
+    }
+    45% {
+        background-color: #008000;
+    }
+    60% {
+        background-color: #0000FF;
+    }
+    75% {
+        background-color: #4B0082;
+    }
+    90% {
+        background-color: #EE82EE;
+    }
+    100% {
+        background-color: #FF0000;
+    }
+}
+
+@keyframes snurr-utan-color {
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes snurr {
+    15% {
+        background-color: #FFA500;
+        transform: rotate(-600deg);
+        left: 10%
+    }
+    30% {
+        background-color: #FFFF00;
+        transform: rotate(600deg);
+        left: 50%;
+    }
+    45% {
+        background-color: #008000;
+        transform: rotate(-600deg);
+        left: 10%;
+    }
+    60% {
+        background-color: #0000FF;
+        transform: rotate(600deg);
+        left: 65%;
+    }
+    75% {
+        background-color: #4B0082;
+        transform: rotate(-601deg);
+        left: 5%;
+    }
+    90% {
+        background-color: #EE82EE;
+        transform: rotate(600deg);
+        left: 50%;
+    }
+    100% {
+        background-color: #FF0000;
+        transform: rotate(-600deg);
+        left: 7%;
+    }
+}
